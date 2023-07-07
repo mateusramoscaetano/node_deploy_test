@@ -1,0 +1,28 @@
+{
+  "name": "docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {"node": "18"},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsx source/server.ts",
+    "build":"tsup source",
+    "start": "node dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.4.0",
+    "prisma": "^4.16.2",
+    "tsup": "^7.1.0",
+    "tsx": "^3.12.7"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.16.2",
+    "fastify": "^4.19.2",
+    "tsnd": "^1.1.0",
+    "zod": "^3.21.4"
+  }
+}
